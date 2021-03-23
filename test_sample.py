@@ -17,3 +17,8 @@ def test_snakecase():
 
 def test_pascalcase():
     assert kebab_case("PascalCase") == "pascal-case"
+
+
+def test_spaces():
+    assert kebab_case(
+        "Spaces in                    the middle") == "spaces-in-the-middle"

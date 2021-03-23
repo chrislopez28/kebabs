@@ -5,16 +5,21 @@
 Kebabs is a lightweight Python package that only does one thing: convert a string to [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles). 
 
 ## Requirements
+
 Python 3.6+
 
 ## Installation
-```python
 
+```shell
+python -m pip install git+https://github.com/chrislopez28/kebabs.git
 ```
 
 ## How to Use
-```
+Import the `kebab_case()` function from kebabs and have at it.
+```python
 from kebabs import kebab_case
+
+kebab_case("I like kebabs") # i-like-kebabs
 ```
 
 ## Examples
@@ -40,8 +45,9 @@ kebab_case("Why, sometimes I've believed as many as six impossible things before
 ```
 
 ### Spaces
-Kebabs removes spaces, newlines, and tabs. 
+Kebabs removes spaces. 
 
 ```python
-
+kebab_case("Spaces in                    the middle")
+# spaces-in-the-middle
 ```
