@@ -14,13 +14,3 @@ def kebab_case(s: str) -> str:
     s = multispace_pattern.sub(' ', s)
     s = spaces_pattern.sub('-', s).lower()
     return s
-
-
-def main():
-    print(kebab_case("The best of times              and the worst of times"))
-    print(kebab_case("theBestOfTimes"))
-    print(kebab_case("theBestOfTimes? It's steve's"))
-
-
-if __name__ == '__main__':
-    main()
